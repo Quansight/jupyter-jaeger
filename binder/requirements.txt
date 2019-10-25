@@ -1,3 +1,4 @@
 jupyter_jaeger
 jaeger_client
 notebook<6
+jupyterlab>1.0.0
