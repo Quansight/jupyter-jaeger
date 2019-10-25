@@ -1,0 +1,7 @@
+.mypy_cache
+*.egg-info
+yarn.lock
+yarn-error.log
+node_modules
+lib
+*.tsbuildinfo
