@@ -17,5 +17,5 @@ description-file = "README.md"
 requires-python = ">=3.6"
 
 [tool.flit.entrypoints."jupyter_serverproxy_servers"]
-jaeger_proxy = "jupyter_jaeger:jaeger_proxy"
-jaeger = "jupyter_jaeger:jaeger_all"
+jaeger_proxy = "jupyter_jaeger:setup_jaeger_proxy"
+jaeger = "jupyter_jaeger:setup_jaeger_all"
