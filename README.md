@@ -19,8 +19,8 @@ It also provis a NPM Typescript plugin you can use to access the client from ins
 # Install jaeger-all-in-one binary
 conda install -c conda-forge jaeger
 
-# Install this package and teh REST API
-pip install jupyter-jaeger jaeger_browser
+# Install this package
+pip install jupyter-jaeger
 
 # Optional, to see Jaeger icon in JupyterLab launcherr
 jupyter labextension install jupyterlab-server-proxy-saulshanabrook
