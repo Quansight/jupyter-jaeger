@@ -38,6 +38,6 @@ This repo also includes an example of starting a trace from a kernel and continu
 in [`./example`](./example). You can try this example by:
 
 1. [Launching the Binder](https://mybinder.org/v2/gh/Quansight/jupyter-jaeger/master?urlpath=lab/tree/example/Untitled.ipynb) for this repo.
-2. Run the notebook.
-3. Create a launcher and launch the Jaeger UI
+2. Create a launcher and launch the Jaeger UI
+3. Run the notebook.
 4. Inspect the trace created by the notebook execution.
