@@ -1,4 +1,4 @@
-# jupyter-jaeger
+# jupyter-jaeger <br> ![PyPI](https://img.shields.io/pypi/v/jupyter_jaeger?style=flat-square) ![npm](https://img.shields.io/npm/v/jupyter-jaeger?style=flat-square)
 
 This adds support for using the [Jaeger](https://www.jaegertracing.io/) distributed tracing tool with Jupyter. It facilitates the use case of tracking some process
 that starts in a kernel and is continued in a mime renderer.
