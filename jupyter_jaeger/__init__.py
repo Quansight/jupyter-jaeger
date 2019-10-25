@@ -4,6 +4,8 @@ Provides jupyter server proxy endpoints for launching Jaeger.
 
 __version__ = "1.0.2"
 
+import pathlib
+
 
 # https://jupyter-server-proxy.readthedocs.io/en/latest/server-process.html
 def setup_jaeger_proxy():
@@ -26,7 +28,7 @@ def setup_jaeger_all():
         "absolute_url": True,
         "launcher_entry": {
             "enabled": True,
-            "icon_path": "./docs/jaeger.svg",
+            "icon_path": str(pathlib.Path(__file__).parent / "jaeger.svg"),
             "title": "Jaeger",
         },
     }

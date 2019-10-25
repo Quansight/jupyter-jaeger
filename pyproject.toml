@@ -9,7 +9,7 @@ author-email = "saul@quansight.com"
 home-page = "https://github.com/Quansight/jupyter-browser"
 classifiers = ["License :: OSI Approved :: MIT License"]
 requires = [
-    "jupyter-jaeger",
+    "jaeger_browser",
     "notebook",
     "jupyter-server-proxy"
 ]

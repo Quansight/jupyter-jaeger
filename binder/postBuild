@@ -1,1 +1,5 @@
-jupyter labextension install . jupyterlab-server-proxy-saulshanabrook
+#!/bin/bash
+set -o errexit
+set -o xtrace
+
+jupyter labextension install ./example jupyterlab-server-proxy-saulshanabrook
