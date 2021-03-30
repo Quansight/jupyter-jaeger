@@ -32,7 +32,7 @@ jobs:
         run: conda list
 
       - name: Install python jupyter-jaeger
-        run: pip install
+        run: pip install .
 
       - name: Install js jupyter-jaeger
         run: yarn
