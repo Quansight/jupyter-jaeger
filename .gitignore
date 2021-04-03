@@ -6,3 +6,5 @@ node_modules
 lib
 *.tsbuildinfo
 dist
+jupyter-jaeger-*.tgz
+package-lock.json
