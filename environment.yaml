@@ -1,0 +1,16 @@
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - nodejs
+  - yarn
+  - jupyterlab 3.*
+  - flit
+
+  - jaeger <1.22
+  - jaeger-agent <1.22.0
+  - jaeger-all-in-one <1.22.0
+  - jaeger-collector <1.22.0
+  - jaeger-example-hotrod <1.22.0
+  - jaeger-ingester <1.22.0
+  - jaeger-query <1.22.0
