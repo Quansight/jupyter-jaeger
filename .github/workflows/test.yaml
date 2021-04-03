@@ -1,0 +1,41 @@
+name: Run tests
+
+on:
+  # This avoids having duplicate builds for a pull request
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    env:
+      CI: "true"
+
+    defaults:
+      run:
+        shell: bash -l {0}
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v1
+
+      - name: Setup conda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: jupyter-jaeger
+          environment-file: environment.yaml
+
+      - name: List Conda packages
+        run: conda list
+
+      - name: Install python jupyter-jaeger
+        run: pip install .
+
+      - name: Install js jupyter-jaeger
+        run: yarn

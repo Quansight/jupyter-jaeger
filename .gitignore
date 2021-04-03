@@ -6,3 +6,8 @@ node_modules
 lib
 *.tsbuildinfo
 dist
+*.tgz
+__pycache__/
+package-lock.json
+labextension/
+
