@@ -96,10 +96,6 @@ setup_args = dict(
             "jaeger_proxy = jupyter_jaeger:setup_jaeger_proxy",
             "jaeger = jupyter_jaeger:setup_jaeger_all",
         ],
-        "console_scripts": [
-            "jlab_jaeger_proxy = jupyter_jaeger:setup_jaeger_proxy",
-            "jlab_jaeger = jupyter_jaeger:setup_jaeger_all",
-        ],
     }
 )
 
