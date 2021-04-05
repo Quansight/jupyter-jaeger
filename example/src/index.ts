@@ -1,7 +1,7 @@
 import { IRenderMime } from "@jupyterlab/rendermime-interfaces";
 
 import { JSONObject } from "@phosphor/coreutils";
-import { client } from "jupyter-jaeger";
+import { client } from "jupyter_jaeger";
 
 import { Widget } from "@phosphor/widgets";
 

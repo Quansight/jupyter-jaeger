@@ -4,7 +4,7 @@ node_modules/
 *.egg-info/
 .ipynb_checkpoints
 *.tsbuildinfo
-jupyter-jaeger/labextension
+jupyter_jaeger/labextension
 
 # Created by https://www.gitignore.io/api/python
 # Edit at https://www.gitignore.io/?templates=python
@@ -112,4 +112,3 @@ dmypy.json
 .DS_Store
 
 *.lock
-labextension/

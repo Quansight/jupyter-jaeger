@@ -31,9 +31,10 @@
   "dependencies": {
     "@jupyterlab/rendermime-interfaces": "^1.3.0",
     "@phosphor/widgets": "^1.5.0",
-    "jupyter-jaeger": "1.0.0"
+    "jaeger-browser": "1.0.0"
   },
   "devDependencies": {
+    "prettier": "^1.17.0",
     "rimraf": "^2.6.3",
     "typescript": "~3.5.2"
   }

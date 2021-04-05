@@ -26,8 +26,7 @@ jobs:
     - name: Build the extension
       run: |
         jlpm
-        jlpm run eslint:check
         python -m pip install .
 
-        jupyter labextension list 2>&1 | grep -ie "jupyter-jaeger.*OK"
-        python -m jupyterlab.browser_check
+        jupyter labextension list 2>&1 | grep -ie "jupyter_jaeger.*OK"
+        # python -m jupyterlab.browser_check
