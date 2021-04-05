@@ -1,1 +1,0 @@
-(self.webpackChunkjupyter_jaeger=self.webpackChunkjupyter_jaeger||[]).push([[568],{568:(e,t,a)=>{"use strict";a.r(t),a.d(t,{client:()=>g,default:()=>i});var r=a(998),n=a(275);const u={id:"jupyter-jaeger",autoStart:!0,activate:e=>{console.log("JupyterLab extension jupyter-jaeger is activated!")}},s=new URL("jaeger_proxy/",n.PageConfig.getBaseUrl()),g=new r.Client(s),i=u}}]);
