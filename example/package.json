@@ -34,7 +34,6 @@
     "jupyter-jaeger": "^1.0.0"
   },
   "devDependencies": {
-    "prettier": "^1.17.0",
     "rimraf": "^2.6.3",
     "typescript": "~3.5.2"
   }
