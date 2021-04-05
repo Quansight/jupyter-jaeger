@@ -66,6 +66,11 @@
   "styleModule": "style/index.js",
   "jupyterlab": {
     "extension": true,
-    "outputDir": "jupyter_jaeger/labextension"
+    "outputDir": "jupyter_jaeger/labextension",
+    "_build": {
+      "load": "static/remoteEntry.ec06e953f5a87ff8b79a.js",
+      "extension": "./extension",
+      "style": "./style"
+    }
   }
 }

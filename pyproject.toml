@@ -1,21 +1,3 @@
 [build-system]
-requires = ["flit"]
-build-backend = "flit.buildapi"
-
-[tool.flit.metadata]
-module = "jupyter_jaeger"
-author = "Saul Shanabrook"
-author-email = "saul@quansight.com"
-home-page = "https://github.com/Quansight/jupyter-browser"
-classifiers = ["License :: OSI Approved :: MIT License"]
-requires = [
-    "jaeger_browser",
-    "notebook",
-    "jupyter-server-proxy"
-]
-description-file = "README.md"
-requires-python = ">=3.6"
-
-[tool.flit.entrypoints."jupyter_serverproxy_servers"]
-jaeger_proxy = "jupyter_jaeger:setup_jaeger_proxy"
-jaeger = "jupyter_jaeger:setup_jaeger_all"
+requires = ["jupyter_packaging~=0.7.9", "jupyterlab>=3.0.0rc13,==3.*", "setuptools>=40.8.0", "wheel"]
+build-backend = "setuptools.build_meta"

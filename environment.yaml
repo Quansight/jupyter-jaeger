@@ -5,7 +5,6 @@ dependencies:
   - nodejs
   - yarn
   - jupyterlab 3.*
-  - flit
 
   - jaeger <1.22
   - jaeger-agent <1.22.0

@@ -1,14 +1,43 @@
-"""
-Provides jupyter server proxy endpoints for launching Jaeger.
-"""
 
-__version__ = "1.0.3"
-
+import json
+import os.path as osp
 import pathlib
+
+from .handlers import setup_handlers
+from ._version import __version__
+
+
+HERE = osp.abspath(osp.dirname(__file__))
+
+with open(osp.join(HERE, 'labextension', 'package.json')) as fid:
+    data = json.load(fid)
+
+def _jupyter_labextension_paths():
+    return [{
+        'src': 'labextension',
+        'dest': data['name']
+    }]
+
+
+def _jupyter_server_extension_points():
+    return [{
+        "module": "jupyter_jaeger"
+    }]
+
+
+def _load_jupyter_server_extension(server_app):
+    """Registers the API handler to receive HTTP requests from the frontend extension.
+    Parameters
+    ----------
+    server_app: jupyterlab.labapp.LabApp
+        JupyterLab application instance
+    """
+    setup_handlers(server_app.web_app)
+    server_app.log.info("Registered HelloWorld extension at URL path /jupyter_jaeger")
 
 
 # https://jupyter-server-proxy.readthedocs.io/en/latest/server-process.html
-def setup_jaeger_proxy():
+def setup_jaeger_proxy() -> Dict[str, Any]:
     return {
         "command": ["jaeger-browser"],
         "environment": {"PORT": "{port}"},
@@ -17,7 +46,7 @@ def setup_jaeger_proxy():
     }
 
 
-def setup_jaeger_all():
+def setup_jaeger_all() -> Dict[str, Any]:
     return {
         "command": [
             "jaeger-all-in-one",
