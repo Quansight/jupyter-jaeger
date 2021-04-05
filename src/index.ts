@@ -14,10 +14,11 @@ const extension: JupyterFrontEndPlugin<void> = {
   autoStart: true,
   activate: (app: JupyterFrontEnd) => {
     console.log('JupyterLab extension jupyter-jaeger is activated!');
+    console.log(new URL("jupyter_jaeger/jaeger_proxy/", PageConfig.getBaseUrl()));
   }
 };
 
-const SERVER_URL = new URL("jaeger_proxy/", PageConfig.getBaseUrl());
+const SERVER_URL = new URL("jupyter_jaeger/jaeger_proxy/", PageConfig.getBaseUrl());
 
 export const client = new Client(SERVER_URL);
 export default extension;
