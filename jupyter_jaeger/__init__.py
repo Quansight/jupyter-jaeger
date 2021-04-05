@@ -40,7 +40,8 @@ def setup_jaeger_proxy():
         "command": ["jaeger-browser"],
         "environment": {"PORT": "{port}"},
         "launcher_entry": {"enabled": False},
-        "timeout": 60
+        "timeout": 60,
+        "absolute_url": True,
     }
 
 
