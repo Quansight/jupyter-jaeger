@@ -33,7 +33,7 @@ def _load_jupyter_server_extension(server_app):
         JupyterLab application instance
     """
     setup_handlers(server_app.web_app)
-    server_app.log.info("Registered HelloWorld extension at URL path /jaeger_proxy")
+    server_app.log.info("Registered extension at URL path /jaeger_proxy")
 
 
 # https://jupyter-server-proxy.readthedocs.io/en/latest/server-process.html
