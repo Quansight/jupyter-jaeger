@@ -60,7 +60,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup_args = dict(
-    name=name,
+    name="jupyter-jaeger",
     version=version,
     url="https://github.com/Quansight/jupyter-jaeger",
     author="Saul Shanabrook",
