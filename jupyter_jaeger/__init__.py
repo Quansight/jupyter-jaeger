@@ -41,7 +41,6 @@ def setup_jaeger_proxy():
         "environment": {"PORT": "{port}"},
         "launcher_entry": {"enabled": False},
         "timeout": 60,
-        "absolute_url": True,
     }
 
 
