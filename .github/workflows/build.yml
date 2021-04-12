@@ -28,5 +28,5 @@ jobs:
         jlpm
         python -m pip install .
 
-        jupyter labextension list 2>&1 | grep -ie "jupyter_jaeger.*OK"
+        jupyter labextension list 2>&1 | grep -ie "jupyter-jaeger.*OK"
         # python -m jupyterlab.browser_check
