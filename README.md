@@ -98,3 +98,29 @@ in [`./example`](./example). You can try this example by:
 2. Create a launcher and launch the Jaeger UI
 3. Run the notebook.
 4. Inspect the trace created by the notebook execution.
+
+
+## Releasing
+
+For releasing, you will need a specific conda environment:
+
+```sh
+conda env create --file environment-release.yaml
+conda activate jupyter-jaeger-release
+```
+
+Now, you can use `make` to publish for **npmjs** and **pypi**.
+
+```sh
+# to publish to npmjs
+make release-npmjs
+# to publish to pypi
+make release-pypi
+```
+
+Also, create a git tag for the new release, for example:
+
+```sh
+git tag 1.0.4
+git push --tags
+```
