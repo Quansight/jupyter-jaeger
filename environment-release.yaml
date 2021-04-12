@@ -1,0 +1,11 @@
+name: jupyter-jaeger-release
+channels:
+  - conda-forge
+dependencies:
+  - jupyter-packaging 0.7.9
+  - make
+  - nodejs
+  - python 3.8.*
+  - setuptools>=40.8.0
+  - twine
+  - wheel
