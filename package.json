@@ -1,5 +1,5 @@
 {
-  "name": "jupyter_jaeger",
+  "name": "jupyter-jaeger",
   "version": "1.0.4",
   "description": "A library for saving traces to jaeger",
   "keywords": [
